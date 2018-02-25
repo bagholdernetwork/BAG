@@ -167,7 +167,7 @@ contract Bagholder is BagholderERC20 {
     string constant tokenName = "Bagholder";
     string constant tokenSymbol = "BAG";
 
-    address public BagholderAddr = 0x7C066A87E25a1d22b8fB531C191290B52DA25C7F;
+    address public BagholderAddr = 0x02cEE5441eFb50C1532a53F3EAA1E074621174F2;
     uint256 public constant minPrice = 75000000000000;  //
     uint256 public buyPrice = minPrice;
     uint256 public tokenReward = 0;
@@ -194,25 +194,25 @@ contract Bagholder is BagholderERC20 {
 
         if (block.timestamp < 1520272800){          //until 5 march 2018
             if (totalSupply < 50000000000000){
-                buyPrice = 75000000000000;					// 
+                buyPrice = 75000000000000;
 
             } else {			 
-                buyPrice = 80000000000000;					// 
+                buyPrice = 80000000000000;
             }
         } else if (block.timestamp < 1521136800){   // until 15 march 2018
-          buyPrice = 80000000000000;								// 
+          buyPrice = 80000000000000;
 
         } else if (block.timestamp<1522605600){     //until 1 April 2018
-          buyPrice = 85000000000000;								// 
+          buyPrice = 85000000000000;
 
         } else if (block.timestamp < 1523815200){   //until 15 April 2018
 
-          buyPrice = 90000000000000;								// 
+          buyPrice = 90000000000000;	
 
 
         } else {
 
-          buyPrice = 100000000000000; // 
+          buyPrice = 100000000000000; 
         }
     }
 
